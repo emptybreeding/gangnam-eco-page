@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026 강남 환경 대전환 페스티벌 | 행사 안내</title>
+<meta name="description" content="2026. 9. 18.(금) 10:30~15:00 코엑스 동문 1층 로비 — 탄소는 줄이고, 순환은 늘리고, 실천은 더하고">
+<meta property="og:title" content="2026 강남 환경 대전환 페스티벌">
+<meta property="og:description" content="9. 18.(금) 10:30~15:00 · 코엑스 동문 1층 로비">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="theme-color" content="#0F4A2F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#0F4A2F;   /* 포스터 배경 딥그린 */
+    --leaf:#2E8B57;     /* 지구 대륙 그린 */
+    --lime:#9CCB4A;     /* 잎사귀 라임 */
+    --cream:#F7F3D9;    /* 카드 크림 */
+    --butter:#F2E38C;   /* '페스티벌' 옐로 */
+    --sky:#7CC7E8;      /* 바다 블루 */
+    --tangerine:#F08A2C;/* 꿀벌·순환 오렌지 */
+    --ink:#1D2B22;
+    --muted:#5F6E64;
+    --line:rgba(15,74,47,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:"Noto Sans KR",system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--forest);
+    line-height:1.6;
+    word-break:keep-all;
+  }
+  .wrap{max-width:520px;margin:0 auto;background:var(--cream);min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,.35)}
+
+  /* ── 헤더/포스터 ── */
+  .hero{background:var(--forest);padding:0 0 26px}
+  .hero img{display:block;width:100%;height:auto}
+  .hero-bar{
+    display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+    padding:18px 16px 0;
+  }
+  .pill{
+    font-family:"Jua",sans-serif;font-size:15px;letter-spacing:.2px;
+    padding:6px 14px;border-radius:999px;
+  }
+  .pill.g{background:#DDEFC5;color:#2C6A2E}
+  .pill.o{background:#FFE4B8;color:#C25A08}
+  .pill.b{background:#D9EEF9;color:#1E6FA2}
+
+  /* ── 공통 섹션 ── */
+  section{padding:38px 20px 8px}
+  h2{
+    font-family:"Jua",sans-serif;font-weight:400;
+    font-size:26px;color:var(--forest);text-align:center;line-height:1.2;
+    margin-bottom:18px;position:relative;
+  }
+  h2 span{position:relative;display:inline-block;padding:0 8px}
+  h2 span::after{
+    content:"";position:absolute;left:0;right:0;bottom:2px;height:11px;
+    background:var(--butter);z-index:-1;border-radius:3px;
+  }
+  .lead{text-align:center;color:var(--muted);font-size:15px;margin:-6px 0 22px}
+
+  /* ── 행사 개요 ── */
+  .info{
+    background:#fff;border:2px solid var(--forest);border-radius:18px;
+    padding:6px 18px;
+  }
+  .info dl{display:grid;grid-template-columns:64px 1fr;gap:0 12px}
+  .info div{display:contents}
+  .info dt,.info dd{padding:13px 0;border-top:1px solid var(--line)}
+  .info div:first-child dt,.info div:first-child dd{border-top:0}
+  .info dt{font-family:"Jua",sans-serif;color:var(--leaf);font-size:16px}
+  .info dd{font-size:15.5px;font-weight:500}
+  .info dd small{display:block;color:var(--muted);font-weight:400;font-size:13.5px;margin-top:2px}
+
+  /* ── 진행 순서(타임라인) ── */
+  .part{margin-bottom:26px}
+  .part-head{
+    display:flex;align-items:baseline;gap:10px;margin-bottom:10px;
+  }
+  .part-head b{
+    font-family:"Jua",sans-serif;font-weight:400;font-size:19px;color:#fff;
+    background:var(--forest);padding:3px 12px;border-radius:8px;
+  }
+  .part-head span{font-family:"Jua",sans-serif;color:var(--forest);font-size:17px}
+  .tl{list-style:none;position:relative;padding-left:18px}
+  .tl::before{content:"";position:absolute;left:5px;top:10px;bottom:10px;width:2px;background:var(--lime);border-radius:2px}
+  .tl li{position:relative;display:grid;grid-template-columns:96px 1fr;gap:10px;padding:8px 0;font-size:15px}
+  .tl li::before{
+    content:"";position:absolute;left:-18px;top:16px;width:12px;height:12px;border-radius:50%;
+    background:var(--cream);border:3px solid var(--leaf);
+  }
+  .tl li.hi::before{background:var(--tangerine);border-color:var(--tangerine)}
+  .tl time{font-variant-numeric:tabular-nums;color:var(--forest);font-weight:700;white-space:nowrap}
+  .tl li small{display:block;color:var(--muted);font-size:13px}
+  .tl li.hi strong{color:#C25A08}
+
+  /* ── 주요 프로그램 ── */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .card{
+    background:#fff;border-radius:16px;padding:18px 14px 16px;text-align:center;
+    border:1.5px dashed rgba(46,139,87,.45);
+  }
+  .card .ico{font-size:32px;line-height:1;margin-bottom:10px}
+  .card h3{font-family:"Jua",sans-serif;font-weight:400;font-size:17px;color:var(--forest);line-height:1.25}
+  .card p{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.45}
+  .card.wide{grid-column:1/-1;background:var(--forest);border:0;color:#fff}
+  .card.wide h3{color:var(--butter)}
+  .card.wide p{color:rgba(255,255,255,.8)}
+
+  /* ── 오시는 길 ── */
+  .addr{text-align:center;font-size:16px;font-weight:500;line-height:1.7}
+  .addr small{display:block;color:var(--muted);font-size:14px;font-weight:400}
+  .btn{
+    display:block;margin:18px 0 0;padding:16px;border-radius:14px;text-align:center;
+    font-family:"Jua",sans-serif;font-size:18px;text-decoration:none;
+    background:var(--forest);color:#fff;
+  }
+  .btn.sub{background:#fff;color:var(--forest);border:2px solid var(--forest);margin-top:10px}
+  .btn:active{transform:translateY(1px)}
+  .tip{
+    margin-top:22px;background:#fff;border-radius:14px;padding:14px 16px;
+    font-size:14px;color:var(--muted);line-height:1.6;
+  }
+  .tip b{color:var(--forest);font-weight:700}
+
+  /* ── 텀블러 배너 ── */
+  .tumbler{
+    margin:34px 20px 0;background:var(--sky);border-radius:18px;padding:20px 18px;
+    display:flex;gap:14px;align-items:center;color:#0E3F5C;
+  }
+  .tumbler .ico{font-size:38px;line-height:1}
+  .tumbler b{font-family:"Jua",sans-serif;font-weight:400;font-size:19px;display:block;line-height:1.2}
+  .tumbler p{font-size:13.5px;margin-top:4px;opacity:.85}
+
+  /* ── 문의/푸터 ── */
+  .contact{text-align:center;padding:40px 20px 8px}
+  .contact h2{margin-bottom:8px}
+  .contact a{color:var(--forest);font-weight:700;text-decoration:none;font-size:20px;font-variant-numeric:tabular-nums}
+  .contact p{color:var(--muted);font-size:14px}
+  footer{padding:30px 40px 42px;text-align:center}
+  footer img{width:min(230px,70%);height:auto}
+  footer p{font-size:12px;color:var(--muted);margin-top:16px}
+
+  @media (prefers-reduced-motion:no-preference){
+    .hero-bar .pill{animation:pop .5s ease-out both}
+    .hero-bar .pill:nth-child(2){animation-delay:.1s}
+    .hero-bar .pill:nth-child(3){animation-delay:.2s}
+    @keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  }
+  a:focus-visible{outline:3px solid var(--tangerine);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <img src="assets/poster.jpg" alt="2026 강남 환경 대전환 페스티벌 포스터 — 2026. 9. 18.(금) 10:30~15:00 코엑스 동문 로비" width="1000" height="1414">
+    <div class="hero-bar" aria-label="행사 슬로건">
+      <span class="pill g">탄소는 줄이고 ↓</span>
+      <span class="pill o">순환은 늘리고 ↑</span>
+      <span class="pill b">실천은 더하고 +</span>
+    </div>
+  </header>
+
+  <!-- 행사 개요 -->
+  <section id="overview">
+    <h2><span>행사 개요</span></h2>
+    <p class="lead">9월 환경 관련 기념일을 계기로, 구민과 환경단체가 함께하는<br>탄소중립 실천의 장을 마련합니다.</p>
+    <div class="info">
+      <dl>
+        <div><dt>행사명</dt><dd>2026 강남 환경 대전환 페스티벌</dd></div>
+        <div><dt>일시</dt><dd>2026. 9. 18.(금) 10:30 ~ 15:00<small>체험부스는 10:00부터 운영</small></dd></div>
+        <div><dt>장소</dt><dd>코엑스 동문 1층 로비<small>서울 강남구 영동대로 513</small></dd></div>
+        <div><dt>주최</dt><dd>강남구청 환경과</dd></div>
+        <div><dt>참여</dt><dd>구민 누구나<small>사전 신청 없이 현장 참여 가능</small></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 진행 순서 -->
+  <section id="schedule">
+    <h2><span>진행 순서</span></h2>
+
+    <div class="part">
+      <div class="part-head"><b>식전행사</b><span>10:30 ~ 10:45</span></div>
+      <ul class="tl">
+        <li><time>10:30–10:45</time><div>축하공연<small>아리모리 앙상블</small></div></li>
+      </ul>
+    </div>
+
+    <div class="part">
+      <div class="part-head"><b>본행사</b><span>10:45 ~ 11:15</span></div>
+      <ul class="tl">
+        <li><time>10:45–10:47</time><div>개회 및 행사 안내</div></li>
+        <li><time>10:47–10:52</time><div>국민의례 및 주요 내빈 소개</div></li>
+        <li><time>10:52–11:00</time><div>환경보전 유공자 표창 및 기념촬영</div></li>
+        <li><time>11:00–11:05</time><div>인사말씀 및 내빈 축사</div></li>
+        <li class="hi"><time>11:05–11:14</time><div><strong>강남 환경 대전환 퍼포먼스</strong> 및 기념촬영</div></li>
+        <li><time>11:14–11:15</time><div>폐회</div></li>
+      </ul>
+    </div>
+
+    <div class="part">
+      <div class="part-head"><b>부대행사</b><span>10:00 ~ 15:00</span></div>
+      <ul class="tl">
+        <li><time>종일</time><div>친환경 체험부스 운영</div></li>
+        <li><time>종일</time><div>탄소중립 홍보 및 기상기후 사진 전시</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 주요 프로그램 -->
+  <section id="program">
+    <h2><span>주요 프로그램</span></h2>
+    <p class="lead">현장에서 바로 참여하는 6가지 실천 체험</p>
+    <div class="grid">
+      <div class="card wide">
+        <div class="ico">🎗️</div>
+        <h3>환경대전환 개막식</h3>
+        <p>축하공연 · 유공자 표창 · 강남 환경 대전환 퍼포먼스</p>
+      </div>
+      <div class="card"><div class="ico">🧼</div><h3>친환경<br>천연비누 체험</h3><p>천연 재료로 나만의 비누 만들기</p></div>
+      <div class="card"><div class="ico">🪴</div><h3>에코 공예<br>체험</h3><p>버려지는 재료로 만드는 업사이클 소품</p></div>
+      <div class="card"><div class="ico">📋</div><h3>나의 환경유형<br>테스트</h3><p>나는 어떤 실천가? 간단 테스트</p></div>
+      <div class="card"><div class="ico">👣</div><h3>탄소발자국<br>측정</h3><p>일상 속 탄소 배출량을 계산해 보기</p></div>
+      <div class="card" style="grid-column:1/-1"><div class="ico">🌿</div><h3>공기정화 반려식물 키우기</h3><p>집에서 키우는 공기정화 식물 심어 가기</p></div>
+    </div>
+  </section>
+
+  <!-- 텀블러 -->
+  <div class="tumbler">
+    <div class="ico">🥤</div>
+    <div>
+      <b>텀블러를 꼭 챙겨오세요</b>
+      <p>환경 행사인 만큼 일회용 컵 없이 진행합니다. 개인 텀블러를 지참해 주세요.</p>
+    </div>
+  </div>
+
+  <!-- 오시는 길 -->
+  <section id="map">
+    <h2><span>오시는 길</span></h2>
+    <p class="addr">코엑스 동문 1층 로비<small>서울 강남구 영동대로 513</small></p>
+    <a class="btn" href="https://map.naver.com/p/search/%EC%BD%94%EC%97%91%EC%8A%A4%20%EB%8F%99%EB%AC%B8" target="_blank" rel="noopener">네이버 지도로 길찾기</a>
+    <a class="btn sub" href="https://map.kakao.com/link/search/%EC%BD%94%EC%97%91%EC%8A%A4" target="_blank" rel="noopener">카카오맵으로 길찾기</a>
+    <div class="tip">
+      <b>지하철</b> 2호선 삼성역 5·6번 출구 → 코엑스몰 연결통로 이용, 동문 방향<br>
+      <b>9호선</b> 봉은사역 7번 출구 → 코엑스 동문까지 도보 3분<br>
+      <b>주차</b> 코엑스 주차장 이용 가능(유료) · 대중교통 이용을 권장합니다
+    </div>
+  </section>
+
+  <!-- 문의 -->
+  <section class="contact">
+    <h2><span>문의</span></h2>
+    <p>강남구청 환경과</p>
+    <a href="tel:02-3423-6203">02-3423-6203</a>
+  </section>
+
+  <footer>
+    <img src="assets/gn_slogan_2026.png" alt="강남을 힘차게! 구민을 신나게! 강남 대전환!!" width="730" height="431">
+    <p>© 2026 강남구청 환경과 · 2026 강남 환경 대전환 페스티벌</p>
+  </footer>
+
+</div>
+</body>
+</html>
