@@ -221,7 +221,7 @@
     <p class="lead">현장에서 바로 참여하는 6가지 실천 체험</p>
     <div class="grid">
       <div class="card wide">
-        <div class="ico">🎗️</div>
+        <div class="ico">🌍</div>
         <h3>환경대전환 개막식</h3>
         <p>축하공연 · 유공자 표창 · 강남 환경 대전환 퍼포먼스</p>
       </div>
@@ -246,7 +246,7 @@
   <section id="map">
     <h2><span>오시는 길</span></h2>
     <p class="addr">코엑스 동문 1층 로비<small>서울 강남구 영동대로 513</small></p>
-    <a class="btn" href="https://m.map.naver.com/search2/search.naver?query=%EC%BD%94%EC%97%91%EC%8A%A4" target="_blank" rel="noopener">네이버 지도로 길찾기</a>
+    <a class="btn" id="naverBtn" href="https://m.map.naver.com/search2/search.naver?query=%EC%BD%94%EC%97%91%EC%8A%A4" target="_blank" rel="noopener">네이버 지도로 길찾기</a>
     <a class="btn sub" href="https://map.kakao.com/link/search/%EC%BD%94%EC%97%91%EC%8A%A4" target="_blank" rel="noopener">카카오맵으로 길찾기</a>
     <div class="tip">
       <b>지하철</b> 2호선 삼성역 5·6번 출구 → 코엑스몰 연결통로 이용, 동문 방향<br>
@@ -268,5 +268,28 @@
   </footer>
 
 </div>
+
+<script>
+// 네이버 지도: 앱이 있으면 앱으로(코엑스 동문 핀), 없으면 모바일 웹 검색으로
+(function(){
+  var btn=document.getElementById('naverBtn'); if(!btn) return;
+  var lat=37.5119, lng=127.0603, name=encodeURIComponent('코엑스 동문 1층 로비');
+  var app='nmap://place?lat='+lat+'&lng='+lng+'&name='+name+'&appname='+encodeURIComponent(location.hostname||'gn-eco-2026');
+  var web=btn.href;
+  var ua=navigator.userAgent, ios=/iPhone|iPad|iPod/i.test(ua), android=/Android/i.test(ua);
+  if(!ios && !android) return;              // PC는 그냥 웹으로
+  btn.addEventListener('click',function(e){
+    e.preventDefault();
+    if(android){
+      location.href='intent://place?lat='+lat+'&lng='+lng+'&name='+name+'&appname=gn-eco-2026'
+        +'#Intent;scheme=nmap;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.nmap;S.browser_fallback_url='+encodeURIComponent(web)+';end';
+      return;
+    }
+    var t=Date.now();
+    location.href=app;
+    setTimeout(function(){ if(Date.now()-t<1600) location.href=web; },1200);
+  });
+})();
+</script>
 </body>
 </html>
