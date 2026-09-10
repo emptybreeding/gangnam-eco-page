@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>2026 강남 환경 대전환 페스티벌 | 행사 안내</title>
-<meta name="description" content="2026. 9. 18.(금) 10:00~15:00 코엑스 동문 1층 로비 — 탄소는 줄이고, 순환은 늘리고, 실천은 더하고">
+<meta name="description" content="2026. 9. 18.(금) 10:30~15:00 코엑스 동문 1층 로비">
 <meta property="og:title" content="2026 강남 환경 대전환 페스티벌">
-<meta property="og:description" content="9. 18.(금) 10:00~15:00 · 코엑스 동문 1층 로비">
+<meta property="og:description" content="9. 18.(금) 10:30~15:00 · 코엑스 동문 1층 로비">
 <meta property="og:image" content="assets/og.jpg">
 <meta name="theme-color" content="#0F4A2F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,20 +37,8 @@
   .wrap{max-width:520px;margin:0 auto;background:var(--cream);min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,.35)}
 
   /* ── 헤더/포스터 ── */
-  .hero{background:var(--forest);padding:0 0 26px}
+  .hero{background:var(--forest);padding:0}
   .hero img{display:block;width:100%;height:auto}
-  .hero-bar{
-    display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
-    padding:18px 16px 0;
-  }
-  .pill{
-    font-family:"Jua",sans-serif;font-size:15px;letter-spacing:.2px;
-    padding:6px 14px;border-radius:999px;
-  }
-  .pill.g{background:#DDEFC5;color:#2C6A2E}
-  .pill.o{background:#FFE4B8;color:#C25A08}
-  .pill.b{background:#D9EEF9;color:#1E6FA2}
-
   /* ── 공통 섹션 ── */
   section{padding:38px 20px 8px}
   h2{
@@ -74,7 +62,7 @@
   .info div{display:contents}
   .info dt,.info dd{padding:13px 0;border-top:1px solid var(--line)}
   .info div:first-child dt,.info div:first-child dd{border-top:0}
-  .info dt{font-family:"Jua",sans-serif;color:var(--leaf);font-size:16px}
+  .info dt{font-family:"Jua",sans-serif;color:var(--leaf);font-size:16px;text-align:justify;text-align-last:justify;padding-right:6px}
   .info dd{font-size:15.5px;font-weight:500}
   .info dd small{display:block;color:var(--muted);font-weight:400;font-size:13.5px;margin-top:2px}
 
@@ -129,15 +117,6 @@
   }
   .tip b{color:var(--forest);font-weight:700}
 
-  /* ── 텀블러 배너 ── */
-  .tumbler{
-    margin:34px 20px 0;background:var(--sky);border-radius:18px;padding:20px 18px;
-    display:flex;gap:14px;align-items:center;color:#0E3F5C;
-  }
-  .tumbler .ico{font-size:38px;line-height:1}
-  .tumbler b{font-family:"Jua",sans-serif;font-weight:400;font-size:19px;display:block;line-height:1.2}
-  .tumbler p{font-size:13.5px;margin-top:4px;opacity:.85}
-
   /* ── 문의/푸터 ── */
   .contact{text-align:center;padding:40px 20px 8px}
   .contact h2{margin-bottom:8px}
@@ -147,12 +126,6 @@
   footer img{width:min(230px,70%);height:auto}
   footer p{font-size:12px;color:var(--muted);margin-top:16px}
 
-  @media (prefers-reduced-motion:no-preference){
-    .hero-bar .pill{animation:pop .5s ease-out both}
-    .hero-bar .pill:nth-child(2){animation-delay:.1s}
-    .hero-bar .pill:nth-child(3){animation-delay:.2s}
-    @keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-  }
   a:focus-visible{outline:3px solid var(--tangerine);outline-offset:3px}
 </style>
 </head>
@@ -160,12 +133,7 @@
 <div class="wrap">
 
   <header class="hero">
-    <img src="assets/poster.jpg" alt="2026 강남 환경 대전환 페스티벌 포스터 — 2026. 9. 18.(금) 10:00~15:00 코엑스 동문 로비" width="1000" height="1414">
-    <div class="hero-bar" aria-label="행사 슬로건">
-      <span class="pill g">탄소는 줄이고 ↓</span>
-      <span class="pill o">순환은 늘리고 ↑</span>
-      <span class="pill b">실천은 더하고 +</span>
-    </div>
+    <img src="assets/poster.jpg" alt="2026 강남 환경 대전환 페스티벌 포스터 — 2026. 9. 18.(금) 10:30~15:00 코엑스 동문 로비" width="1000" height="1414">
   </header>
 
   <!-- 행사 개요 -->
@@ -175,7 +143,7 @@
     <div class="info">
       <dl>
         <div><dt>행사명</dt><dd>2026 강남 환경 대전환 페스티벌</dd></div>
-        <div><dt>일시</dt><dd>2026. 9. 18.(금) 10:00 ~ 15:00<small>개막식 10:30 ~ 11:15 · 체험부스 10:00 ~ 15:00</small></dd></div>
+        <div><dt>일시</dt><dd>2026. 9. 18.(금) 10:30 ~ 15:00<br>체험부스 10:30 ~ 15:00</dd></div>
         <div><dt>장소</dt><dd>코엑스 동문 1층 로비<small>서울 강남구 영동대로 513</small></dd></div>
         <div><dt>주최</dt><dd>강남구청 환경과</dd></div>
         <div><dt>참여</dt><dd>구민 누구나<small>사전 신청 없이 현장 참여 가능</small></dd></div>
@@ -225,22 +193,13 @@
         <h3>환경대전환 개막식</h3>
         <p>축하공연 · 유공자 표창 · 강남 환경 대전환 퍼포먼스</p>
       </div>
-      <div class="card"><div class="ico">🧼</div><h3>친환경<br>천연비누 체험</h3><p>천연 재료로 나만의 비누 만들기</p></div>
+      <div class="card"><div class="ico">☕</div><h3>커피박<br>스크럽 체험</h3><p>버려지는 커피 찌꺼기로 만드는 천연 스크럽</p></div>
       <div class="card"><div class="ico">🪴</div><h3>에코 공예<br>체험</h3><p>버려지는 재료로 만드는 업사이클 소품</p></div>
       <div class="card"><div class="ico">📋</div><h3>나의 환경유형<br>테스트</h3><p>나는 어떤 실천가? 간단 테스트</p></div>
       <div class="card"><div class="ico">👣</div><h3>탄소발자국<br>측정</h3><p>일상 속 탄소 배출량을 계산해 보기</p></div>
       <div class="card" style="grid-column:1/-1"><div class="ico">🌿</div><h3>공기정화 반려식물 키우기</h3><p>집에서 키우는 공기정화 식물 심어 가기</p></div>
     </div>
   </section>
-
-  <!-- 텀블러 -->
-  <div class="tumbler">
-    <div class="ico">🥤</div>
-    <div>
-      <b>텀블러를 꼭 챙겨오세요</b>
-      <p>환경 행사인 만큼 일회용 컵 없이 진행합니다. 개인 텀블러를 지참해 주세요.</p>
-    </div>
-  </div>
 
   <!-- 오시는 길 -->
   <section id="map">
